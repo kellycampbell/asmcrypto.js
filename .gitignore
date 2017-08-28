@@ -1,5 +1,5 @@
-asmcrypto.js
-asmcrypto.js.map
+asmcrypto*.js
+asmcrypto*.js.map
 test/aes.asm.js
 test/aes.asm.js.map
 doc/

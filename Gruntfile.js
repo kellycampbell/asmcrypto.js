@@ -2,10 +2,12 @@
 var defaults = [
     'utils',
     'globals',
+    'aes-ecb',
     'aes-cbc',
     'aes-gcm',
     'sha1',
     'sha256',
+    'sha512',
     'hmac-sha1',
     'hmac-sha256',
     'pbkdf2-hmac-sha1',
@@ -112,7 +114,7 @@ module.exports = function (grunt) {
             },
             all: {
                 files: {
-                    'asmcrypto.js': 'asmcrypto.js'
+                    'asmcrypto.min.js': 'asmcrypto.js'
                 }
             }
         },
