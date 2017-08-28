@@ -110,7 +110,10 @@ export function bytes_to_hex ( arr ) {
 }
 
 export function bytes_to_base64 ( arr ) {
+  if (typeof btoa !== 'undefined') {
     return btoa( bytes_to_string(arr) );
+  }
+  return Buffer.from(arr, 'binary').toString('base64')
 }
 
 export function pow2_ceil ( a ) {

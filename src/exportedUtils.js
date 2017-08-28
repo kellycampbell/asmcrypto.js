@@ -2,7 +2,7 @@
  * Util exports
  */
 
-export {
+import {
   string_to_bytes,
   hex_to_bytes,
   base64_to_bytes,
@@ -10,3 +10,12 @@ export {
   bytes_to_hex,
   bytes_to_base64,
 } from "./utils.js";
+
+export {
+  string_to_bytes,
+  hex_to_bytes,
+  base64_to_bytes,
+  bytes_to_string,
+  bytes_to_hex,
+  bytes_to_base64,
+}
