@@ -135,14 +135,14 @@ else
 
 if ( typeof asmCrypto.RSA_PKCS1_v1_5_SHA256 !== 'undefined' )
 {
-    test( "asmCrypto.RSA_PKCS1_v1_5_SHA256 encrypt/decrypt", function () {
-        var cleartext = asmCrypto.string_to_bytes('HelloWorld!');
+    test( "asmCrypto.RSA_PKCS1_v1_5_SHA256 sign/verify", function () {
+        var text = 'HelloWorld!HelloWorld!HelloWorld!HelloWorld!HelloWorld!HelloWorld!HelloWorld!HelloWorld!';
 
-        var ciphertext = asmCrypto.RSA_PKCS1_v1_5_SHA256.encrypt( cleartext, pubkey, 'test' );
-        ok( ciphertext, "encrypt" );
+        var signature = asmCrypto.RSA_PKCS1_v1_5_SHA256.sign( text, privkey );
+        ok( signature, "sign" );
 
-        var result = asmCrypto.RSA_PKCS1_v1_5_SHA256.decrypt( ciphertext, privkey, 'test' );
-        equal( asmCrypto.bytes_to_string(result), 'HelloWorld!', "decrypt" );
+        var result = asmCrypto.RSA_PKCS1_v1_5_SHA256.verify( signature, text, pubkey );
+        ok( result, "verify" );
     });
 }
 else

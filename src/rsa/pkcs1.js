@@ -300,7 +300,7 @@ function RSA_PSS_verify ( signature, data ) {
     return this;
 }
 
-function RSA_PKCS1_v1_5(options) {
+export function RSA_PKCS1_v1_5(options) {
     options = options || {};
 
     if (!options.hash)
