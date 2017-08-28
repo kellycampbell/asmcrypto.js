@@ -26,5 +26,8 @@ export * from './rsa/exports-oaep-sha512';
 export * from './rsa/exports-pss-sha1';
 export * from './rsa/exports-pss-sha256';
 export * from './rsa/exports-pss-sha512';
+export * from './rsa/exports-pkcs1-v1_5-sha1';
+export * from './rsa/exports-pkcs1-v1_5-sha256';
+export * from './rsa/exports-pkcs1-v1_5-sha512';
 export * from './rsa/exports-raw';
 export * from './origin';

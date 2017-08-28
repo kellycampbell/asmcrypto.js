@@ -46,6 +46,9 @@ Index
         * [RSA-PSS-SHA1](#rsa_pss_sha1)
         * [RSA-PSS-SHA256](#rsa_pss_sha256)
         * [RSA-PSS-SHA512](#rsa_pss_sha512)
+        * [RSA-PKCS1-v1_5-SHA1](#rsa_pkcs1_v1_5_sha1)
+        * [RSA-PKCS1-v1_5-SHA256](#rsa_pkcs1_v1_5_sha256)
+        * [RSA-PKCS1-v1_5-SHA512](#rsa_pkcs1_v1_5_sha512)
     * [Cryptographically secure pseudorandom number generator](#cryptographically-secure-pseudorandom-number-generator)
 * [Bugs & TODO](#bugs--todo)
 * [Donate](#donate)
@@ -545,6 +548,36 @@ TODO
 TODO
 
 ##### RSA_PSS_SHA512.verify( signature, data, key, slen )
+
+TODO
+
+#### RSA_PKCS1_v1_5_SHA1
+
+##### RSA_PKCS1_v1_5_SHA1.sign( data, key, slen )
+
+TODO
+
+##### RSA_PKCS1_v1_5_SHA1.verify( signature, data, key, slen )
+
+TODO
+
+#### RSA_PKCS1_v1_5_SHA256
+
+##### RSA_PKCS1_v1_5_SHA256.sign( data, key, slen )
+
+TODO
+
+##### RSA_PKCS1_v1_5_SHA256.verify( signature, data, key, slen )
+
+TODO
+
+#### RSA_PKCS1_v1_5_SHA512
+
+##### RSA_PKCS1_v1_5_SHA512.sign( data, key, slen )
+
+TODO
+
+##### RSA_PKCS1_v1_5_SHA512.verify( signature, data, key, slen )
 
 TODO
 
