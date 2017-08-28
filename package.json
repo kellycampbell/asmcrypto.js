@@ -26,18 +26,18 @@
         "url": "https://github.com/vibornoff/asmcrypto.js.git"
     },
     "devDependencies": {
-        "uglify-js": "vibornoff/UglifyJS2",
-        "grunt": "~0.4",
-        "grunt-cli": "~0.1",
-        "grunt-contrib-uglify": "~0.9",
-        "grunt-contrib-concat": "~0.5",
-        "grunt-contrib-qunit": "~0.4",
-        "grunt-contrib-connect": "~0.7",
-        "grunt-contrib-watch": "~0.2",
-        "grunt-contrib-clean": "~0.4",
-        "grunt-saucelabs": "~8.0",
-        "grunt-jsdoc": "~0.6",
-        "grunt-rollup": "^2.0.1"
+        "grunt": "~1.0",
+        "grunt-cli": "~1.2",
+        "grunt-contrib-clean": "~1.1",
+        "grunt-contrib-concat": "~1.0",
+        "grunt-contrib-connect": "~1.0",
+        "grunt-contrib-qunit": "~2.0",
+        "grunt-contrib-uglify": "~3.0",
+        "grunt-contrib-watch": "~1.0",
+        "grunt-jsdoc": "~2.1",
+        "grunt-rollup": "^4.0.0",
+        "grunt-saucelabs": "~9.0",
+        "uglify-js": "vibornoff/UglifyJS2"
     },
     "engines": {
         "node": "~0.10"
