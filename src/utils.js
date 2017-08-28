@@ -54,7 +54,10 @@ export function hex_to_bytes ( str ) {
 }
 
 export function base64_to_bytes ( str ) {
-    return string_to_bytes( atob( str ) );
+    if (typeof atob !== 'undefined') {
+      return string_to_bytes( atob( str ) );
+    }
+    return new Buffer(str, 'base64');
 }
 
 export function bytes_to_string ( bytes, utf8 ) {
