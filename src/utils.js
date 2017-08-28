@@ -54,9 +54,6 @@ export function hex_to_bytes ( str ) {
 }
 
 export function base64_to_bytes ( str ) {
-    if (typeof atob !== 'undefined') {
-      return string_to_bytes( atob( str ) );
-    }
     return new Buffer(str, 'base64');
 }
 
@@ -113,9 +110,6 @@ export function bytes_to_hex ( arr ) {
 }
 
 export function bytes_to_base64 ( arr ) {
-  if (typeof btoa !== 'undefined') {
-    return btoa( bytes_to_string(arr) );
-  }
   return Buffer.from(arr, 'binary').toString('base64')
 }
 
