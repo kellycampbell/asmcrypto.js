@@ -1,9 +1,9 @@
 {
-  "name": "asmcrypto.js",
-  "version": "1.0.0-beta.1",
+  "name": "@kellycampbell/asmcrypto.js",
+  "version": "1.0.2-beta.3",
   "description": "Asm.js implementation of WebCrypto API",
   "homepage": "https://github.com/vibornoff/asmcrypto.js",
-  "main": "src/index.js",
+  "main": "./asmcrypto.js",
   "browser": "./asmcrypto.js",
   "license": "MIT",
   "author": {
@@ -41,19 +41,9 @@
     "grunt-saucelabs": "~9.0",
     "uglify-js": "vibornoff/UglifyJS2"
   },
-  "engines": {
-    "node": "~0.10"
-  },
   "scripts": {
     "prepublish": "grunt",
     "test": "grunt test"
   },
-  "dependencies": {
-    "@std/esm": "^0.5.1"
-  },
-  "@std": {
-    "esm": {
-      "esm": "js"
-    }
-  }
+  "dependencies": {}
 }
